@@ -4,7 +4,7 @@ Bu proje, web sayfalarındaki formların gönderilmesini dinleyen ve form verile
 
 ## Kullanım
 
-1. HTML belgenize JavaScript kodunu ekleyin. Kod, sayfa yüklendiğinde tüm formları dinler ve verileri belirtilen bir URL'ye gönderir.
+HTML belgenize JavaScript kodunu ekleyin. Kod, sayfa yüklendiğinde tüm formları dinler ve verileri belirtilen bir URL'ye gönderir.
 
 ```html
 <script src="form-submit.js"></script>
@@ -13,7 +13,7 @@ Kodu özelleştirin: https://mysite.com/target URL'sini, form verilerinizi almak
 
 Kodunuzun çalıştığını doğrulamak için tarayıcıda sayfanızı açın ve bir form göndermeyi deneyin. Konsolunuzu (F12 tuşuna basarak) kontrol ederek gönderilen mesajları görebilirsiniz.
 
-## Özelleştirme
+## Özellikler
 
 Bu kodu daha da geliştirmek ve özelleştirmek için aşağıdaki yolları düşünebilirsiniz:
 
