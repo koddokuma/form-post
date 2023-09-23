@@ -8,6 +8,7 @@ HTML belgenize JavaScript kodunu ekleyin. Kod, sayfa yüklendiğinde tüm formla
 
 ```html
 <script src="form-submit.js"></script>
+```
 
 Kodu özelleştirin: https://mysite.com/target URL'sini, form verilerinizi almak istediğiniz hedef URL'siyle değiştirin.
 
