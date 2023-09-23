@@ -1,23 +1,32 @@
-# Form Verilerini Gönderen Basit JavaScript Kodu
+# Form Verilerini Gönderme Kodu
 
-Bu proje, web sayfalarındaki formların gönderilmesini dinleyen ve form verilerini belirtilen bir hedef URL'ye POST isteği olarak gönderen basit bir JavaScript kodu içerir.
+Bu basit JavaScript kodu, web sayfasındaki formların gönderilmesini otomatikleştirmek için kullanabilirsiniz. Kullanıcılar bir formu doldurduğunda, bu kod form verilerini belirtilen bir hedef URL'sine HTTP POST isteği olarak gönderir ve sonuçları konsola kaydeder.
 
-## Kullanım
+## Nasıl Kullanılır
 
-HTML belgenize JavaScript kodunu ekleyin. Kod, sayfa yüklendiğinde tüm formları dinler ve verileri belirtilen bir URL'ye gönderir.
+1. Kodu sayfanıza eklemek için bu repository'yi klonlayın veya kodu kendi projenize kopyalayın.
 
-```html
-<script src="form-submit.js"></script>
-html```
+2. Kod içindeki `'https://mysite.com/target'` URL'sini kendi hedef URL'nizle değiştirin. Form verileri bu URL'ye gönderilecektir.
 
-Kodu özelleştirin: https://mysite.com/target URL'sini, form verilerinizi almak istediğiniz hedef URL'siyle değiştirin.
+3. Sayfanızın HTML dosyasına aşağıdaki gibi bir `<script>` etiketi ekleyin:
 
-Kodunuzun çalıştığını doğrulamak için tarayıcıda sayfanızı açın ve bir form göndermeyi deneyin. Konsolunuzu (F12 tuşuna basarak) kontrol ederek gönderilen mesajları görebilirsiniz.
+<script src="path-to-your-script.js"></script>
 
-## Özellikler
+Kodun çalışabilmesi için sayfa tamamen yüklendiğinde çalışması gerektiğinden, <script> etiketini sayfanızın <body> etiketinin hemen üstüne eklemeye dikkat edin veya DOMContentLoaded olayını dinleyerek kodu tetikleyin.
 
-Bu kodu daha da geliştirmek ve özelleştirmek için aşağıdaki yolları düşünebilirsiniz:
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Kod burada
+  });
+</script>
 
-Kullanıcı geri bildirimini iyileştirin: Başarı ve hata durumlarında kullanıcıya daha açıklayıcı mesajlar gösterin.
-Form doğrulama ekleyin: Form verilerinin geçerli olduğunu doğrulamak için ek kontroller ekleyin.
-Güvenlik önlemleri ekleyin: Form verilerini güvende tutmak için sunucu tarafında güvenlik önlemleri ekleyin.
+Kodu başarıyla ekledikten sonra, formunuzu sayfanıza ekleyin. Bu kod, sayfanızdaki tüm formları otomatik olarak yakalayacaktır.
+
+## Özelleştirme ve Geliştirme
+Bu kodu kendi ihtiyaçlarınıza göre özelleştirebilir ve geliştirebilirsiniz. İşte bazı öneriler:
+
+Kullanıcı geri bildirimini iyileştirin: Form gönderim sonuçları hakkında daha fazla bilgi vermek için kullanıcı arayüzüne geri bildirim ekleyin.
+
+Form doğrulama ekleyin: Formun doğru bir şekilde doldurulup doldurulmadığını kontrol etmek için form doğrulama ekleyin.
+
+Güvenlik: Form verilerini güvende tutmak için sunucu tarafında gerekli güvenlik önlemlerini alın.
